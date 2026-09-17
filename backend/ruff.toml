@@ -1,0 +1,1 @@
+extend-exclude = ["apps/*/migrations/*.py"]

@@ -1,0 +1,1 @@
+"""SnapLink Django project configuration."""
