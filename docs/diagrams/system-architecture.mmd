@@ -1,0 +1,10 @@
+flowchart LR
+    Browser[Browser] --> Frontend[React + Vite]
+    Frontend --> API[Django REST Framework]
+    API --> DB[(PostgreSQL)]
+    Browser --> Worker[Cloudflare Worker]
+    Worker --> API
+    Browser --> Fallback[Django redirect fallback]
+    Fallback --> DB
+    API --> Analytics[Analytics processing]
+    Analytics --> DB

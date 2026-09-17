@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Node / Vite / Wrangler
+node_modules/
+dist/
+.vite/
+.wrangler/
+coverage/
+
+# Environment and local services
+.env
+.env.*
+!.env.example
+postgres-data/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

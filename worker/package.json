@@ -1,0 +1,16 @@
+{
+  "name": "snaplink-worker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SnapLink Cloudflare Worker redirect layer (Phase 0 scaffold)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "vitest": "latest",
+    "wrangler": "latest"
+  }
+}

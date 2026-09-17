@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  planning-check:
+    name: Phase 0 structure check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check documentation and planned manifests exist
+        run: |
+          test -f README.md
+          test -f backend/requirements.txt
+          test -f frontend/package.json
+          test -f worker/package.json
+          test -f docs/ARCHITECTURE.md
+      - name: Check whitespace errors
+        run: git diff --check HEAD~1 HEAD || true
+
+# Executable app checks are added with the runnable applications in later phases.
