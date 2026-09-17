@@ -4,7 +4,7 @@ SnapLink is a final-year Bachelor’s project for creating, managing, and measur
 
 ## Current status
 
-**Phase 0 complete: repository and planning.** This checkout contains no Django application, frontend application, database migrations, or Worker implementation yet. Functional setup and run commands will be added only once those components exist.
+**Phase 1 complete: Django foundation.** The backend now has environment-based PostgreSQL configuration, a custom user model, an initial migration, and `/api/health/`. Frontend, links, authentication endpoints, redirects, analytics, and the Worker remain deferred to their planned phases.
 
 ## Target stack
 
@@ -27,6 +27,8 @@ docs/          Architecture, requirements, review, and project documentation
 ## Local prerequisites
 
 Planned local execution requires Python, Node.js, PostgreSQL (or Docker Compose), and Wrangler for the Worker. See [the architecture decisions](docs/ARCHITECTURE.md) and [review](docs/REVIEW.md) for current constraints.
+
+For the backend setup, migrations, server, and tests, see [Local Setup](docs/LOCAL_SETUP.md).
 
 ## Documentation
 

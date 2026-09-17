@@ -15,6 +15,8 @@ The authoritative visual source is [system-architecture.mmd](diagrams/system-arc
 | Django owns the custom user model in Phase 1 | Defining it before the first migration avoids a risky replacement. |
 | Docker Compose is optional | It provides a consistent PostgreSQL path without making Docker a prerequisite. |
 | No application code in Phase 0 | The requested scope is repository and planning only. |
+| Django 5.2 LTS for Phase 1 | It supports the installed Python 3.14 runtime and provides a stable project baseline. |
+| SQLite only for automated tests | PostgreSQL is the runtime database; the test-only setting keeps automated checks reproducible without a local service. |
 
 ## Specification conflict resolved
 
